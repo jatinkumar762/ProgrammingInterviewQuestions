@@ -43,7 +43,7 @@ class Solution
         
         visited[vertex] = true;
         for(Integer neighbour : adj.get(vertex)){
-            if(visited[neighbour]==false){
+            if(visited[neighbour] == false){
                 dfs(neighbour, adj, visited, result);
             }
         }
